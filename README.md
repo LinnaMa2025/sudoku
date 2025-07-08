@@ -8,15 +8,15 @@ make # this will produce the executable file `sudoku`
 
 **Usage:**
 
-sudoku --solve <inputfile> [outputfile] Solve the Sudoku puzzle.
+sudoku --solve \<inputfile\> [outputfile] Solve the Sudoku puzzle.
 
-sudoku --validate <inputfile> Check if the puzzle has a unique solution.
+sudoku --validate \<inputfile\> Check if the puzzle has a unique solution.
 
-sudoku --level <inputfile> Get difficulty level.
+sudoku --level \<inputfile\> Get difficulty level.
 
 **Arguments:**
 
-<inputfile> Path to the Sudoku puzzle input file.
+\<inputfile\> Path to the Sudoku puzzle input file.
 
 [outputfile] Optional output file to save the solved puzzle.
 
@@ -46,9 +46,10 @@ sudoku test cases. Each test case contains two files:
 
 - \*.txt: the input Sudoku puzzle
 - \*.ref: the unique solution, i.e., the reference file of the test case
-  Each file is a plain text file, that only contains character '1'-'9', '.' and newlines.
-  Each character represents an cell in the Sudoku, and a dot '.' means the cell is empty and should be filled.
+
+Each file is a plain text file, that only contains character '1'-'9', '.' and newlines.
+Each character represents an cell in the Sudoku, and a dot '.' means the cell is empty and should be filled.
 
 **test/invalid**
 
-invalid sudoku puzzels, which may contain zero or more than one solutions.
+Invalid sudoku puzzles, which may contain zero or more than one solutions.
